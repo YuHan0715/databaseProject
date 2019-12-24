@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,17 @@
 		1106480523AE17C2004B87DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1106480323AE17C2004B87DC /* Main.storyboard */; };
 		1106480723AE17C6004B87DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1106480623AE17C6004B87DC /* Assets.xcassets */; };
 		1106480A23AE17C6004B87DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1106480823AE17C6004B87DC /* LaunchScreen.storyboard */; };
+		1106481223AE37BB004B87DC /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106481123AE37BB004B87DC /* Server.swift */; };
+		1106481523AE3B10004B87DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1106481423AE3B10004B87DC /* Alamofire */; };
+		1106481823AE3BAC004B87DC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1106481723AE3BAC004B87DC /* SwiftyJSON */; };
+		1106481B23AE3BE1004B87DC /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 1106481A23AE3BE1004B87DC /* ObjectMapper */; };
+		1106481D23AE4E6A004B87DC /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106481C23AE4E6A004B87DC /* Account.swift */; };
+		1106481F23AE83C5004B87DC /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106481E23AE83C5004B87DC /* MainPageViewController.swift */; };
+		1106482123AE9D2A004B87DC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106482023AE9D2A004B87DC /* SignUpViewController.swift */; };
+		1106482523AFA449004B87DC /* TransrecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106482423AFA449004B87DC /* TransrecordViewController.swift */; };
+		1106482723AFAD4A004B87DC /* TransRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106482623AFAD4A004B87DC /* TransRecord.swift */; };
+		1106482923B062D2004B87DC /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106482823B062D2004B87DC /* TransferViewController.swift */; };
+		1106482B23B0F90C004B87DC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1106482A23B0F90B004B87DC /* MyPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,14 @@
 		1106480623AE17C6004B87DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1106480923AE17C6004B87DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1106480B23AE17C6004B87DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1106481123AE37BB004B87DC /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		1106481C23AE4E6A004B87DC /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		1106481E23AE83C5004B87DC /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		1106482023AE9D2A004B87DC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1106482423AFA449004B87DC /* TransrecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransrecordViewController.swift; sourceTree = "<group>"; };
+		1106482623AFAD4A004B87DC /* TransRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransRecord.swift; sourceTree = "<group>"; };
+		1106482823B062D2004B87DC /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
+		1106482A23B0F90B004B87DC /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1106481B23AE3BE1004B87DC /* ObjectMapper in Frameworks */,
+				1106481823AE3BAC004B87DC /* SwiftyJSON in Frameworks */,
+				1106481523AE3B10004B87DC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +78,7 @@
 		110647FC23AE17C2004B87DC /* databaseBank */ = {
 			isa = PBXGroup;
 			children = (
+				1106481123AE37BB004B87DC /* Server.swift */,
 				110647FD23AE17C2004B87DC /* AppDelegate.swift */,
 				110647FF23AE17C2004B87DC /* SceneDelegate.swift */,
 				1106480123AE17C2004B87DC /* ViewController.swift */,
@@ -63,6 +86,13 @@
 				1106480623AE17C6004B87DC /* Assets.xcassets */,
 				1106480823AE17C6004B87DC /* LaunchScreen.storyboard */,
 				1106480B23AE17C6004B87DC /* Info.plist */,
+				1106481C23AE4E6A004B87DC /* Account.swift */,
+				1106481E23AE83C5004B87DC /* MainPageViewController.swift */,
+				1106482023AE9D2A004B87DC /* SignUpViewController.swift */,
+				1106482423AFA449004B87DC /* TransrecordViewController.swift */,
+				1106482623AFAD4A004B87DC /* TransRecord.swift */,
+				1106482823B062D2004B87DC /* TransferViewController.swift */,
+				1106482A23B0F90B004B87DC /* MyPageViewController.swift */,
 			);
 			path = databaseBank;
 			sourceTree = "<group>";
@@ -83,6 +113,11 @@
 			dependencies = (
 			);
 			name = databaseBank;
+			packageProductDependencies = (
+				1106481423AE3B10004B87DC /* Alamofire */,
+				1106481723AE3BAC004B87DC /* SwiftyJSON */,
+				1106481A23AE3BE1004B87DC /* ObjectMapper */,
+			);
 			productName = databaseBank;
 			productReference = 110647FA23AE17C2004B87DC /* databaseBank.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,11 @@
 				Base,
 			);
 			mainGroup = 110647F123AE17C2004B87DC;
+			packageReferences = (
+				1106481323AE3B10004B87DC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1106481623AE3BAC004B87DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				1106481923AE3BE1004B87DC /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+			);
 			productRefGroup = 110647FB23AE17C2004B87DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +178,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1106482523AFA449004B87DC /* TransrecordViewController.swift in Sources */,
+				1106482923B062D2004B87DC /* TransferViewController.swift in Sources */,
+				1106481D23AE4E6A004B87DC /* Account.swift in Sources */,
+				1106482123AE9D2A004B87DC /* SignUpViewController.swift in Sources */,
 				1106480223AE17C2004B87DC /* ViewController.swift in Sources */,
 				110647FE23AE17C2004B87DC /* AppDelegate.swift in Sources */,
+				1106482B23B0F90C004B87DC /* MyPageViewController.swift in Sources */,
+				1106481223AE37BB004B87DC /* Server.swift in Sources */,
+				1106481F23AE83C5004B87DC /* MainPageViewController.swift in Sources */,
 				1106480023AE17C2004B87DC /* SceneDelegate.swift in Sources */,
+				1106482723AFAD4A004B87DC /* TransRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +333,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GT59YR9W9T;
 				INFOPLIST_FILE = databaseBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yuhan.databaseBank;
+				PRODUCT_BUNDLE_IDENTIFIER = yuhan.dataBaseBankDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,12 +351,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GT59YR9W9T;
 				INFOPLIST_FILE = databaseBank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yuhan.databaseBank;
+				PRODUCT_BUNDLE_IDENTIFIER = yuhan.dataBaseBankDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -336,6 +386,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1106481323AE3B10004B87DC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1106481623AE3BAC004B87DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1106481923AE3BE1004B87DC /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1106481423AE3B10004B87DC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1106481323AE3B10004B87DC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1106481723AE3BAC004B87DC /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1106481623AE3BAC004B87DC /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		1106481A23AE3BE1004B87DC /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1106481923AE3BE1004B87DC /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 110647F223AE17C2004B87DC /* Project object */;
 }
