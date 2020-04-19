@@ -22,7 +22,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var road: UITextField!
     @IBOutlet weak var BdatePicker: UIDatePicker!
     var Bdate:String?
-
+    @IBOutlet weak var confirm: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,14 +35,15 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         sex.delegate = self
         road.delegate = self
         
-        name.placeholder = "姓名"
-        Pssn.placeholder = "身分證字號"
-        phNumber.placeholder = "手機號碼"
-        mail.placeholder = "信箱"
-        city.placeholder = "縣市"
-        road.placeholder = "街道"
-        sex.placeholder = "性別"
+        name.placeholder = "請輸入姓名"
+        Pssn.placeholder = "請輸入身分證字號"
+        phNumber.placeholder = "請輸入手機號碼"
+        mail.placeholder = "請輸入信箱"
+        city.placeholder = "請輸入縣市"
+        road.placeholder = "請輸入街道"
+        sex.placeholder = "請輸入性別"
         
+        confirm.layer.cornerRadius = 13
         // Do any additional setup after loading the view.
     }
     
@@ -70,7 +72,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     func signUpSuccess() {
-        let alert = UIAlertController(title: "註冊成功", message: "請重新登入", preferredStyle: .alert)
+        let alert = UIAlertController(title: "註冊成功", message: "請重新登入/n帳號為姓名/n密碼預設為身份證字號", preferredStyle: .alert)
         let action = UIAlertAction(title: "確認", style: .default, handler: { (action) -> () in
             self.performSegue(withIdentifier: "signUpSuccess", sender: nil)
         })

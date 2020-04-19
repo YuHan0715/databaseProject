@@ -16,7 +16,7 @@ class MainPageViewController: UIViewController {
     @IBOutlet weak var balance: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        hiName.text = "Hi! " + Account.account!
+        hiName.text = Account.account!
         hiName.sizeToFit()
         
 //        getMainPageData(account: Account.account!, {(res)->() in

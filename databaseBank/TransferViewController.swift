@@ -16,6 +16,7 @@ class TransferViewController: UIViewController, UITextFieldDelegate
     let url = "http://140.134.79.128:6627"
     @IBOutlet weak var AC: UITextField!
     @IBOutlet weak var transMoney: UITextField!
+    @IBOutlet weak var transferConfirm: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +25,7 @@ class TransferViewController: UIViewController, UITextFieldDelegate
 
         AC.placeholder = "轉入帳號"
         transMoney.placeholder = "轉入金額"
-        
+        transferConfirm.layer.cornerRadius = 15
         // Do any additional setup after loading the view.
     }
     

@@ -29,6 +29,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         logInLabel.layer.cornerRadius = 16.5;
         
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        account.resignFirstResponder()
+        password.resignFirstResponder()
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
     @IBAction func click(_ sender: Any) {
         login(user: account.text!, password: password.text!, {(resCheck, resAccount) -> () in
